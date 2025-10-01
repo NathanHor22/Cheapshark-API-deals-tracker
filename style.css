@@ -27,8 +27,6 @@ header, .subheader, .search-container, .results-container {
 
 /* Dark header with rounded corners */
 header {
-    background-color: #706969;
-    opacity: 0.6;
     color: white;
     padding: 10px 0;
     text-align: center;
