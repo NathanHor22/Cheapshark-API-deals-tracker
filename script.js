@@ -1,4 +1,4 @@
-//const API_BASE_URL = 'https://www.cheapshark.com/api/1.0';
+const API_BASE_URL = 'https://www.cheapshark.com/api/1.0';
 
 //Test cases
 console.log('Script loaded successfully');
@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-const USE_LOCAL_DATA = true; // Set to false to use live API
+const USE_LOCAL_DATA = false; // Set to false to use live API
 async function searchGames(query) {
     try {
         if (USE_LOCAL_DATA) {
