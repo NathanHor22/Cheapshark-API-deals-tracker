@@ -6,7 +6,6 @@ console.log('Script loaded successfully');
 // Add this to the top to test
 document.addEventListener('DOMContentLoaded', function() {
     console.log('DOM loaded, script is working');
-    // ...rest of your existing code...
 });
 
 
@@ -14,25 +13,21 @@ const USE_LOCAL_DATA = true; // Set to false to use live API
 async function searchGames(query) {
     try {
         if (USE_LOCAL_DATA) {
-        // Use local sample data for testing
-            const response = await fetch('data.json');
-            const allGames = await response.json();
+            // Use local sample data for testing
+                const response = await fetch('data.json');
+                const allGames = await response.json();
 
-        // Further filter results to ensure relevance
-        const filteredGames = allGames.filter(game => 
-        game.external.toLowerCase().includes(query.toLowerCase())
-        );
-        
-        displayGames(filteredGames);
-
-
+            // Further filter results to ensure relevance
+            const filteredGames = allGames.filter(game => 
+            game.external.toLowerCase().includes(query.toLowerCase())
+            );
+            
+            displayGames(filteredGames);
 
         } else {
         const response = await fetch(`${API_BASE_URL}/games?title=${encodeURIComponent(query)}&limit=3`);
         const games = await response.json();
         displayGames(games);
-
-
         }
 
     } catch (error) {
