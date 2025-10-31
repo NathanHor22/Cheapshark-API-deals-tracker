@@ -35,8 +35,7 @@ The project features a **dynamic animated background** powered by **Vanta.js**, 
 ---
 
 ## 🚀 Live Demo  
-🔗 [https://your-live-link.com](https://your-live-link.com)  
-*(Replace with your actual hosted URL.)*
+🔗 [https://nathanhor22.github.io/Cheapshark-API-deals-tracker/](https://nathanhor22.github.io/Cheapshark-API-deals-tracker/)  
 
 ---
 
