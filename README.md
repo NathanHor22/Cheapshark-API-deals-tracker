@@ -45,7 +45,3 @@ The project features a **dynamic animated background** powered by **Vanta.js**, 
 - Introduce local caching to reduce API calls  
 - Add light/dark theme switcher  
 
----
-
-## 📜 License  
-MIT License © [Your Name], 2025
